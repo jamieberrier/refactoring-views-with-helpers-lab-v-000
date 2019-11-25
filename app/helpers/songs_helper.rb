@@ -5,7 +5,7 @@ module SongsHelper
     if @song.artist
       link_to @song.artist_name, artist_path(@song.artist)
     else # return a link to the song's edit page, with a link text of "Add Artist"
-      link_to "Add Artist", song_path(@song)
+      link_to "Add Artist", edit_song_path(@song)
     end
   end
 
