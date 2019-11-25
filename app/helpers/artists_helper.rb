@@ -1,7 +1,6 @@
 module ArtistsHelper
 
   def display_artist(song)
-    #binding.pry
     # If an artist is already associated with the song, return a link to the artist's show page
     if song.artist
       link_to song.artist_name, song.artist
